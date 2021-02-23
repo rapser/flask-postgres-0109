@@ -1,3 +1,5 @@
 {
-    "python.pythonPath": "/Users/rapser/Desktop/flask-rest-postgresql/tuto-env/bin/python3.9"
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "/Users/rapser/Documents/Github/python/flask-rest-postgres/venv/bin/python3.9"
 }
