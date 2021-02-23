@@ -1,4 +1,5 @@
 {
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.pythonPath": "/Users/rapser/Documents/Github/python/flask-rest-postgres/venv/bin/python3.9"
 }
