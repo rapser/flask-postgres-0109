@@ -1,5 +1,7 @@
 # Flask Postgres SQLAlchemy
 
+### Codigo 8BND-BCRA-WSXA
+
 El proyecto utiliza las siguientes tecnologias
 
 - Flask
@@ -37,4 +39,12 @@ Es necesario instalar estas dependencias para el proyecto
 
 ```sh
 $ pip flask flask-sqlalchemy flask-marshmallow marshmallow-sqlalchemy 
+```
+
+## Despliegue
+
+Lo hacemos de manera local
+
+```sh
+$ python app.py
 ```
