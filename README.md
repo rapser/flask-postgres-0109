@@ -1,6 +1,4 @@
-# Flask Postgres SQLAlchemy
-
-### Codigo 8BND-BCRA-WSXA
+# flask-postgres-0109
 
 El proyecto utiliza las siguientes tecnologias
 
