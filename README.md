@@ -39,6 +39,12 @@ Es necesario instalar estas dependencias para el proyecto
 $ pip flask flask-sqlalchemy flask-marshmallow marshmallow-sqlalchemy 
 ```
 
+Podemos instalar las dependencias directamente del archivo txt
+
+```sh
+$ pip freeze > requirements.txt
+````
+
 ## Despliegue
 
 Lo hacemos de manera local
