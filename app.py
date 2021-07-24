@@ -5,7 +5,10 @@ from marshmallow_sqlalchemy import ModelSchema
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root1983@localhost/libraryCatalog'
+# Local
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:root1983@localhost/libraryCatalog'
+# Heroku
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://wefgmzwgylfspo:7d91b39d590f5f676ef832bf0e82ffe61828278116190499e51f5affcdbe6497@ec2-54-236-137-173.compute-1.amazonaws.com:5432/d7c7babpk90t4c'
 app.debug=True
 
 db = SQLAlchemy(app)
