@@ -1,18 +1,18 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : postgre-mac
+ Source Server         : postgres-miguel
  Source Server Type    : PostgreSQL
- Source Server Version : 100015
+ Source Server Version : 130003
  Source Host           : localhost:5432
  Source Catalog        : libraryCatalog
  Source Schema         : public
 
  Target Server Type    : PostgreSQL
- Target Server Version : 100015
+ Target Server Version : 130003
  File Encoding         : 65001
 
- Date: 23/03/2021 00:50:45
+ Date: 24/07/2021 15:29:35
 */
 
 
@@ -33,6 +33,17 @@ START 1
 )
 ;
 ALTER TABLE "public"."books" OWNER TO "postgres";
+
+-- ----------------------------
+-- Records of books
+-- ----------------------------
+BEGIN;
+INSERT INTO "public"."books" VALUES ('se desarrolla en la sierra del peru', 15, 2, 'paco yunque');
+INSERT INTO "public"."books" VALUES ('se desarrolla en la sierra del peru', 15, 3, 'paco yunque');
+INSERT INTO "public"."books" VALUES ('La historia de la vida', 5, 4, 'la pequeña gran historia');
+INSERT INTO "public"."books" VALUES ('se desarrolla en la sierra del peru', 15, 5, 'paco yunque');
+INSERT INTO "public"."books" VALUES ('Eren es un titan', 29, 6, 'ataque a los titanes');
+COMMIT;
 
 -- ----------------------------
 -- Primary Key structure for table books
