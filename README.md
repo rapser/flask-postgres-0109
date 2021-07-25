@@ -52,3 +52,28 @@ Lo hacemos de manera local
 ```sh
 $ python app.py
 ```
+## Heroku Deploy
+
+Lo primero que tenemos que hacer es logearnos con nuestra cuenta heroku. Antes de ello debemos instalar heroku cli en nuestra mac.
+
+```sh
+$ heroku login
+```
+
+Como estamos usando una bd de postgres. Nos dirigimos en Resources y agregamos Heroku Postgres.
+
+Debemos crear los siguientes archivos en nuestro proyecto Procfile con el siguiente contenido:
+
+> web: gunicorn app:app
+
+Ademas, agregar la siguiente dependencia:
+
+> gunicorn
+
+Cuando subimos unos cambios ejecutamos lo siguiente en la consola en la ubicacion de la carpeta de nuestro proyecto.
+
+```sh
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku main
+```
